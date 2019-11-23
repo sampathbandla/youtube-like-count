@@ -1,0 +1,16 @@
+<input id='id'  placeholder='Enter Video URL:'>
+<button onclick="sumbitted()">Sumbit</button>
+
+<script>
+   function sumbitted()
+   {
+       if(document.getElementById('id').value != "")
+       {
+           window.location.href='/likes?a=' + document.getElementById('id').value;
+       }
+       else
+       {
+           alert("Enter ID:")
+       }
+   }
+</script>
